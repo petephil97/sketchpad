@@ -1,0 +1,21 @@
+* {
+   font-family: arial, sans-serif;
+   font-size: 15px;
+   text-decoration: none;
+   color: black;
+}
+.container {
+   background-color: red;
+   border: 5px solid black;
+   border-radius: 5px;
+   width: 500px;
+   height: 525px;
+   margin: 75px auto 0 auto;
+}
+.square {
+   background-color: blue;
+   height: 29.25px;
+   width: 29.25px;
+   margin: 0px 1px 1px 1px;
+   display: inline-block;
+}
