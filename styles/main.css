@@ -3,19 +3,23 @@
    font-size: 15px;
    text-decoration: none;
    color: black;
+   margin: 0;
+   padding: 0;
 }
 .container {
-   background-color: red;
+   background-color: white;
    border: 5px solid black;
    border-radius: 5px;
-   width: 500px;
-   height: 525px;
-   margin: 75px auto 0 auto;
+   width: 720px;
+   height: 720px;
+   margin: 60px auto;
 }
 .square {
-   background-color: blue;
-   height: 29.25px;
-   width: 29.25px;
-   margin: 0px 1px 1px 1px;
-   display: inline-block;
+   background-color: white;
+   height: 45px;
+   width: 45px;
+   float: left;
+}
+.square-hover {
+   background-color: grey;
 }
