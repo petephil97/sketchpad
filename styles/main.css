@@ -6,13 +6,34 @@
    margin: 0;
    padding: 0;
 }
+.title {
+   width: 720px;
+   margin: 20px auto;
+}
+.clear {
+   display: block;
+   height: 40px;
+   width: 150px;
+   color: gray;
+   border: none;
+   background-color: #e5e5e5;
+   border-radius: 2px;
+   font-weight: bold;
+   text-align: center;
+   margin: 20px auto;
+}
+.clear:hover {
+   border: 2px solid grey;
+   box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+   color: black;
+}
 .container {
    background-color: white;
    border: 5px solid black;
    border-radius: 5px;
    width: 720px;
    height: 720px;
-   margin: 60px auto;
+   margin: 20px auto;
 }
 .square {
    background-color: white;
