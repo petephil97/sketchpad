@@ -6,6 +6,9 @@
    margin: 0;
    padding: 0;
 }
+h1 {
+   text-align: center;
+}
 .title {
    width: 720px;
    margin: 20px auto;
@@ -42,5 +45,5 @@
    float: left;
 }
 .square-hover {
-   background-color: grey;
+   background-color: red;
 }
