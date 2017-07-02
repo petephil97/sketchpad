@@ -1,6 +1,14 @@
 var numberSquares = 16;
 var squareSize = 45;
 
+function randNum(n) {
+	return Math.floor(Math.random() * n);
+}
+
+function randRGB() {
+	return "rgb("+randNum(255)+","+randNum(255)+","+randNum(255)+")";
+}
+
 function makeGrid() {
    for (var x = 0; x < numberSquares; x++) {
       for (var y = 0; y < numberSquares; y++) {
@@ -31,5 +39,10 @@ $(document).ready(function() {
    $('.clear').on('click', clearPad);
    $('.container').on('mouseenter', '.square', function() {
       $(this).addClass('square-hover');
+		if ($('#pen').is(':checked')) {
+			$(this).css({'background-color': 'black'});
+		} else if ($('#rainbow').is(':checked')) {
+				$(this).css({'background-color': randRGB()});
+		}
    });
 });
