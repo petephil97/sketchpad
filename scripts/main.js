@@ -19,7 +19,7 @@ function makeGrid() {
 }
 
 function clearPad() {
-   numberSquares = prompt('How many squares per side would you like? (max 100)');
+   numberSquares = prompt('How many pixels per side would you like? (max 100)');
    if (numberSquares === null) {
       return;
    }
@@ -38,11 +38,12 @@ $(document).ready(function() {
    makeGrid();
    $('.clear').on('click', clearPad);
    $('.container').on('mouseenter', '.square', function() {
-      $(this).addClass('square-hover');
 		if ($('#pen').is(':checked')) {
-			$(this).css({'background-color': 'black'});
+			$(this).css({'background-color': 'black', 'opacity': '1'});
 		} else if ($('#rainbow').is(':checked')) {
-				$(this).css({'background-color': randRGB()});
+			$(this).css({'background-color': randRGB(), 'opacity': '1'});
+		} else if ($('#gradient').is(':checked')) {
+			$(this).css({'background-color': 'black', 'opacity': '+=0.1'});
 		}
    });
 });

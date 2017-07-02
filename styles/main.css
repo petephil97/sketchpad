@@ -50,4 +50,5 @@ form input {
    height: 45px;
    width: 45px;
    float: left;
+   opacity: 0;
 }
